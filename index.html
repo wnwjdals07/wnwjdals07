@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Stylish Portfolio - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1">20201023 주정민</h1>
+                <h3 class="mb-5"><em>게시판</em></h3>
+                
+            </div>
+        </header>
+        <!-- About-->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>게시판 사이트입니다.</h2>
+                        
+                        <a class="btn btn-dark btn-xl" href="#services">어떤 기능이 있나요?</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section bg-primary text-white text-center" id="services">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    
+                    <h2 class="mb-5">기능</h2>
+                </div>
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
+                        <h4><strong>전체 메시지 보기</strong></h4>
+                        <p class="text-faded mb-0">작성된 모든 메시지들을 확인할 수 있어요.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
+                        <h4><strong>메시지 작성</strong></h4>
+                        <p class="text-faded mb-0">이름과 작성 내용을 입력해서 페이지에 글을 남기세요. </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
+                        <h4><strong>검색 키워드</strong></h4>
+                        <p class="text-faded mb-0">
+                            키워드를 통해 검색하세요.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
+                        <h4><strong>메시지 삭제</strong></h4>
+                        <p class="text-faded mb-0">메시지 번호를 지정해서 삭제할 수 있어요.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Callout-->
+        <section class="callout">
+            <div class="container px-4 px-lg-5 text-center">
+                
+                    <form method="post" action="simple_insert.php">
+             이름 입력<input type="text" name="a1"><br>
+             메시지 입력<input type="text" name="a2"><br>
+        <input type="submit" value="확인">
+    </form>
+    <form method="post" action="simple_search.php">
+        검색 키워드 입력<input type="text" name="c1"><br>
+        <input type="submit" value="확인">
+    </form>
+    <form method="post" action="simple_delete.php">
+        삭제 번호 입력<input type="text" name="b1"><br>
+        <input type="submit" value="확인">
+    </form>              
+            </div>
+        </section>
+        <!-- Footer-->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <form method="post" action="simple_select.php">
+                        작성된 전체 메시지를 표시합니다.<br>
+                       <input type="submit" value="확인">
+                         </form>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
